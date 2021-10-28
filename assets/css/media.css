@@ -1,47 +1,68 @@
-/*================================Satrt the large screens=========================*/
-@media (min-width:1201px ) and (max-width: 1440px)
-{
-   
-}
-@media (min-width:1025px) and (max-width:1200px)
-{
-   
-}
-/*this is property for an search button only*/
-@media(max-width: 1999px)and (min-width: 768px)
-{
- 
-}
-/*==============================Start the screen of tablet=========================*/
-@media (min-width: 993px) and (max-width: 1024px)
-{
- 
-}
-@media (min-width: 769px) and (max-width: 992px)
-{
-    
-}
-/*==============================Start the screen of mobbile=========================*/
-@media (min-width: 577px) and (max-width: 768px)
-{
-  
+@media (max-width: 899px) {
+    h1, h2 ,h3 {
+        font-size: 25px !important;
+    }
+    h4, h5, h6 {
+        font-size: 20px !important;
+    }
+    p , a {
+        font-size: 14px !important;
+    }
+    .navbar .content{
+        justify-content: space-between;
+    }
+    .navbar .content .navbar-nav{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 100px;
+        right: -100%;
+        background-color: #fff;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: center;
+        padding: 20px 0px;
+        transition: all .4s linear;
+    }
+    .active-nav{
+        right: 0px !important;
+    }
+    .navbar .content .hamburger{
+        display: block !important;
+    }
 
+    .navbar .content .navbar-nav .nav-item .nav-link{
+        margin: 15px 0px;
+    }
+    .navbar.navbar-fixed-top.scrolled  .navbar-nav{
+        top: 80px;
+    }
+    .navbar .content .navbar-nav .nav-item .nav-link {
+        width: fit-content;
+        margin: auto;
+    }
+    .about-us .image-content{
+        width: 450px;
+        height: 450px;
+        margin: auto;
+    }
+    .btn-contain{
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+    header .item .content{
+        padding-right: 0px;
+        margin-bottom: 20px;
+    }
+    .features .content ul li::After{
+        top: 10px;
+        transform: translate(0px) !important;
+    }
 }
-@media(min-width: 426px) and (max-width: 576px)
-{
-    
-   
-}
-@media (min-width: 376px) and (max-width: 425px)
-{
-  
-}
-@media (min-width: 321px) and (max-width: 375px)
-{
-    
-}
-@media (max-width: 320px)
-{
-   
-    
+@media (max-width: 500px) {
+    .about-us .image-content{
+        width: 300px;
+        height: 300px;
+        margin: auto;
+    }
 }

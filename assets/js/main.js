@@ -7,11 +7,17 @@ $(document).ready(function () {
     //scroll to top make fade for button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
-            $(".scroll-top-button").fadeIn();
+            $(".scroll-top-btn").addClass('active');
         } else {
-            $(".scroll-top-button").fadeOut();
+            $(".scroll-top-btn").removeClass('active');
         }
     });
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar-fixed-top");
+            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+        });
+    });  
     //scroll to top button
     $(".scroll-top-button").on('click', function () {
         $('html , body').animate({
@@ -28,14 +34,15 @@ $(document).ready(function () {
     });
     wow.init();
     //start active navbar
-    $('.nav-button').click(function(){
-        $('.mobile-nav').addClass('active-nav');
-    });
-    $('.mobile-close').click(function(){
-        $('.mobile-nav').removeClass('active-nav');
+   //start active navbar
+   $('.hamburger').click(function(){
+        $('.hamburger').toggleClass('active');
+        $('.navbar-nav').toggleClass('active-nav');
+        $('body').toggleClass('overflowNone')
     });
     //owl header screen 
     $('.owl-header').owlCarousel({
+        rtl: true,
         loop:true,
         margin: 20,
         nav:false,
@@ -55,7 +62,7 @@ $(document).ready(function () {
         items:1
     });
     //partner slider 
-    $('.owl-partner').owlCarousel({
+    $('.owl-projects').owlCarousel({
         rtl: true,
         loop:false,
         margin: 20,
@@ -81,7 +88,37 @@ $(document).ready(function () {
                 items:2
             },
             1000:{
-                items:5
+                items:3
+            }
+        }
+    });
+    $('.owl-secience').owlCarousel({
+        rtl: true,
+        loop:false,
+        margin: 0,
+        nav:false,
+        dots: true,
+        autoplay: true,
+        touchDrag  : true,
+		mouseDrag  : true,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 6000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
             }
         }
     });
