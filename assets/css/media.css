@@ -35,7 +35,7 @@
         margin: 15px 0px;
     }
     .navbar.navbar-fixed-top.scrolled  .navbar-nav{
-        top: 80px;
+        top: 67px;
     }
     .navbar .content .navbar-nav .nav-item .nav-link {
         width: fit-content;
@@ -57,6 +57,23 @@
     .features .content ul li::After{
         top: 10px;
         transform: translate(0px) !important;
+    }
+    .course .course-data-content .nav li a{ 
+        min-width: fit-content !important;
+    }
+    .course .course-list{
+        position: absolute;
+        top: 76px;
+        right: -100%;
+        width: 100%;
+        transition: all .4s linear;
+        overflow-y: scroll;
+        min-height: 500px;
+        z-index: 999 !important;
+        box-shadow: 0px 0px 10px rgba(0 , 0, 0, .8);
+    }
+    .course .btn-contain.filter{
+        display: flex;
     }
 }
 @media (max-width: 500px) {

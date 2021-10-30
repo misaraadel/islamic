@@ -1,3 +1,35 @@
+var acceptNewPass = false;
+const toggle = document.getElementById('toggle');
+function acceptNewPassFun(){
+    if(acceptNewPass){
+        document.getElementById("acceptNewPassId").setAttribute("type" , "password");
+        toggle.classList.add('fa-eye');
+        toggle.classList.remove('fa-eye-slash');
+        acceptNewPass = false;
+    }else{
+        document.getElementById("acceptNewPassId").setAttribute("type" , "text");
+        toggle.classList.remove('fa-eye');
+        toggle.classList.add('fa-eye-slash');
+        acceptNewPass = true;
+    }
+}
+
+var NewPassId = false;
+const newToggle = document.getElementById('newToggle');
+function NewPassFun(){
+    if(acceptNewPass){
+        document.getElementById("NewPassId").setAttribute("type" , "password");
+        newToggle.classList.add('fa-eye');
+        newToggle.classList.remove('fa-eye-slash');
+        acceptNewPass = false;
+    }else{
+        document.getElementById("NewPassId").setAttribute("type" , "text");
+        newToggle.classList.remove('fa-eye');
+        newToggle.classList.add('fa-eye-slash');
+        acceptNewPass = true;
+    }
+}
+
 $(document).ready(function () {
     /*start the loading page */
     window.addEventListener("load", function () {
@@ -24,8 +56,8 @@ $(document).ready(function () {
             scrollTop: 0
         }, 100);
     });
-     //Wow intit
-     wow = new WOW({
+    //Wow intit
+    wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
         offset: 200,
@@ -39,6 +71,17 @@ $(document).ready(function () {
         $('.hamburger').toggleClass('active');
         $('.navbar-nav').toggleClass('active-nav');
         $('body').toggleClass('overflowNone')
+    });
+    //start active navbar
+    $('.filter').click(function(){
+        $('.filter-toggle').toggleClass('active');
+        $('.course-list').toggleClass('active-nav');
+        
+    });
+    $('.course-data li').click(function(){
+        $('.filter-toggle').toggleClass('active');
+        $('.course-list').toggleClass('active-nav');
+        
     });
     //owl header screen 
     $('.owl-header').owlCarousel({
