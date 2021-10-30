@@ -32,10 +32,7 @@ function NewPassFun(){
 
 $(document).ready(function () {
     /*start the loading page */
-    window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
+    $('.loader').fadeOut(2000);
     //scroll to top make fade for button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
