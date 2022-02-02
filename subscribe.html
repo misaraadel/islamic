@@ -28,6 +28,7 @@
         <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
         <!--the intilize of dots that appear with owl carousel -->
         <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+        <link rel="stylesheet" href="assets/css/lib/jquery.fancybox.min.css" />
         <!--end the intialize of css library files-->
         <!--start the intilalize of css files -->
         <!--the stylesheet en file-->
@@ -52,48 +53,59 @@
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">
+                            <a href="subscribe.html" class="nav-link active">
                                 الرئيسية
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                من نحن
+                            <a href="study.html" class="nav-link">
+                                الدراسة 
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                الاهداف
+                            <a href="questions.html" class="nav-link">
+                              معدل الانجاز
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="courses.html" class="nav-link">
-                                الدراسة الاكاديمية
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="features.html" class="nav-link">
-                                المميزات
+                            <a href="questions.html" class="nav-link">
+                                الأسئلة
                             </a>
                         </li>
                     </ul>
 
-                    <a href="login.html" class="btn-contain bk-transparent">
-                        تسجيل الدخول
-                    </a>
-
-                    <a href="register.html" class="btn-contain">
-                        انضم الينا 
-                    </a>
+                    <div class="d-flex align-items-center align-content-center">
+                        <div class="dropdown"> 
+                            <a href="login.html" class="dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i>
+                                <span>
+                                    اسم المستخدم
+                                </span>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="setting.html">الصفحة الشخصية</a>
+                                <a class="dropdown-item" href="login.html">تسجيل خروج</a>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="notifaction mx-4">
+                            <span class="number">
+                                3
+                            </span>
+                            <i class="fas fa-bell"></i>
+                        </a>
+                    </div>
+                    
                 </div>
             </div>
         </nav>
+
         <main>
             <section class="sub-header">
                 <div class="container">
                     <div class="content">
                         <h4 class="heading">
-                            جميع البرامج التعليمية
+                         اشترك الان
                         </h4>
                         <ul class="list-data">
                             <li>
@@ -103,142 +115,85 @@
                             </li>
                             <li>
                                 <span>
-                                    جميع البرامج التعليمية
+                                    اشترك الان
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </section>
-            
-            <section class="table-data">
+
+            <section class="subscribe">
                 <div class="container">
-                    <div class="table-responsive">
-                        <table class="table">
-                            <tr>
-                                <th class="head full-width" colspan="4">
-                                    مخطط الدراسة بالأكاديمية
-                                </th>
-                            </tr>
+                    <div class="row">
+                        <div class="col-lg-6 col-12 mx-auto mb-4">
+                            <div class="subscribe-content">
+                                <div class="heading">
+                                    <h4>
+                                        اشترك في قناتنا على تليجرام
+                                    </h4>
+                                </div>
 
-                            <tr>
-                                <th class="head full-width" colspan="4">
-                                    السنة الأولى
-                                </th>
-                            </tr>
+                                <a href="#" class="btn-contain">
+                                    اضغط هنا للاشتراك
+                                </a>
+                            </div>
+                        </div>
 
-                            <tr>
-                                <th class="head">
-                                    السور
-                                </th>
+                        <div class="col-12">
+                            <div class="heading">
+                                <h4>
+                                    اشترك في قناتنا على تليجرام
+                                </h4>
+                            </div>
 
-                                <th class="head">
-                                    القراءة
-                                </th>
+                            <div class="owl-carousel owl-theme owl-subscribe">
+                                <div class="item">
+                                    <div class="box">
+                                        <img src="assets/images/features.jpg" alt="">
 
-                                <th class="head">
-                                    الحفظ
-                                </th>
+                                        <a href="https://www.youtube.com/watch?v=59GQo9eojWw"  data-fancybox  class="video-play">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <th class="head">
-                                    إثرائي
-                                </th>
-                            </tr>
+                                <div class="item">
+                                    <div class="box">
+                                        <img src="assets/images/features.jpg" alt="">
 
-                            <tr>
-                                <td class="data">
-                                    سورة العلق
-                                </td>
+                                        <a href="https://www.youtube.com/watch?v=59GQo9eojWw"  data-fancybox  class="video-play">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <td class="data">
-                                    كتاب تفسير
-                                </td>
+                                <div class="item">
+                                    <div class="box">
+                                        <img src="assets/images/features.jpg" alt="">
 
-                                <td class="data">
-                                    سورة القلم
-                                </td>
+                                        <a href="https://www.youtube.com/watch?v=59GQo9eojWw"  data-fancybox  class="video-play">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
 
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-                            </tr>
+                                <div class="item">
+                                    <div class="box">
+                                        <img src="assets/images/features.jpg" alt="">
 
-                            <tr>
-                                <td class="data">
-                                    سورة العلق
-                                </td>
-
-                                <td class="data">
-                                    كتاب تفسير
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="data">
-                                    سورة العلق
-                                </td>
-
-                                <td class="data">
-                                    كتاب تفسير
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="data">
-                                    سورة العلق
-                                </td>
-
-                                <td class="data">
-                                    كتاب تفسير
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td class="data">
-                                    سورة العلق
-                                </td>
-
-                                <td class="data">
-                                    كتاب تفسير
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-
-                                <td class="data">
-                                    سورة القلم
-                                </td>
-                            </tr>
-                        </table>
+                                        <a href="https://www.youtube.com/watch?v=59GQo9eojWw"  data-fancybox  class="video-play">
+                                            <i class="fas fa-play"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
         </main>
+
         <footer>
             <div class="container">
                 <div class="row">
@@ -345,6 +300,7 @@
                 </div>
             </div>
         </footer>
+
         <div class="copyrights">
             <p>
                 جميع الحقوق محفوظه لدي أكاديمية الرشد لعلوم القرآن @ 2021
@@ -377,8 +333,32 @@
         <script src="assets/js/lib/owl.carousel.min.js"></script>
         <!--intialize wow js lib-->
         <script src="assets/js/lib/wow.min.js"></script>
+        <script src="assets/js/lib/jquery.fancybox.min.js"></script>
         <!--end the intialize of js lib-->
         <!--intialize main js file-->
         <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.fancybox').fancybox({
+                    arrows: false,
+                    loop: false,
+                    keyboard: false,
+                    infobar: false,
+                    protect: true,
+                    hideScrollbar: true,
+                    touch: false ,
+                    image: {
+                        preload: true
+                    },
+                    youtube : {
+                        controls : 0,
+                        showinfo : 0
+                    },
+                    vimeo : {
+                        color : 'f00'
+                    }
+                });
+            })
+        </script>
     </body>
 </html>

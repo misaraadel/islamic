@@ -81,6 +81,14 @@
     .order-mobile-1 {
         order: 1 !important;
     }
+
+    .table-data .table-responsive .table .data{
+        min-width: 120px !important;
+    }
+
+    .navbar .dropdown-toggle span{
+        display: none;
+    }
 }
 @media (max-width: 500px) {
     .about-us .image-content{

@@ -101,6 +101,27 @@ $(document).ready(function () {
         autoplayHoverPause: true,
         items:1
     });
+
+    $('.owl-subscribe').owlCarousel({
+        rtl: true,
+        loop:true,
+        margin: 20,
+        nav:false,
+        dots: true,
+        autoplay: true,
+        touchDrag  :true,
+		mouseDrag  : true,
+		autoWidth: false,
+		animateOut: 'fadeOut',
+        animateIn: 'fadeIn',
+        autoplayTimeout: 2000,
+		smartSpeed: 2000,
+		dragEndSpeed: 2000,
+		slidSpeed: 900,
+        paginationSpeed: 900,
+        autoplayHoverPause: true,
+        items:1
+    });
     //partner slider 
     $('.owl-projects').owlCarousel({
         rtl: true,
