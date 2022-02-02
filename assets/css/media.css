@@ -89,6 +89,20 @@
     .navbar .dropdown-toggle span{
         display: none;
     }
+    .navbar  .btn-contain{
+        padding: 10px !important;
+    }
+    .navbar .btn-contain.bk-transparent{
+        padding: 0px !important;
+        font-size: 12px !important;
+    }
+    .navbar .content .brand-name h4{
+        font-size: 15px !important;
+    }
+
+    .copyrights p{
+        font-size: 11px !important;
+    }
 }
 @media (max-width: 500px) {
     .about-us .image-content{
